@@ -71,7 +71,6 @@ $ git clone git@github.com:I9ME/zoeweb.gitt
 # Access project folder in terminal/cmd
 $ cd zoeweb
 
-# The server will start on port:3000 - acess http://localhost:3000 
 ```
 
 ## 📝 Licence
