@@ -54,7 +54,7 @@ The following tools were used in building the project:
 - HTML5 and CSS3
 - Custom API
 
-- *CSS based in SUITCSS
+*CSS based in SUITCSS
 
 
 ## 🚀 How to run the project
