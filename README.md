@@ -29,7 +29,7 @@ We developed Zoeweb Streaming's institutional website with the powerful WordPres
 
 The layout is available in Behance:
 
-<a href="https://www.figma.com/file/Z5lMbLc5Lqfk75gA93lw1B/PARALELAS?type=design&node-id=1107%3A55&mode=design&t=Jm30zfVgXROLZWF9-1">
+<a href="https://www.behance.net/gallery/174856619/Website-development-for-ZoeWeb-company">
 <img alt="Figma" src="https://img.shields.io/static/v1?label=Link&message=Layout&color=blue&style=flat&logo=behance&logoColor=#FFFFFF" />
 </a>
 
