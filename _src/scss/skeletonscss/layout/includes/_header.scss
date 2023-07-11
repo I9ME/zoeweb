@@ -1,0 +1,43 @@
+.Site-header{
+	@media screen and (min-width: $break-sm){
+		&-branding{
+			//flex:1;
+		}
+		&-content{
+			//flex:5;
+		}	
+	}
+	&-brandingContainer{
+		height:auto;
+	}
+
+}
+
+.single .Site-header,
+.category .Site-header,
+.search .Site-header,
+.archive .Site-header{
+			background-color: $color_2;
+			padding-bottom: 30px;
+		}
+
+
+.category,
+.search{
+	& .Intro--blog-header{
+		top: 0px;
+		padding-top: 220px;
+		height: 453px;
+	}
+
+}
+
+.Branding{
+	&--img{
+	width:100%;
+	max-width:200px;
+	}
+	&--img:last-child{
+	display:none;
+	}
+}

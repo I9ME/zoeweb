@@ -1,0 +1,44 @@
+.ButtonLink{
+	position: relative;
+	border-width:2px;
+	border-style: solid;
+	border-radius:50px;
+	padding-left:15px;
+	padding-right:15px;
+	&--nav{
+		border-color: $color_2;
+		font-size: 16px;
+		@media screen and (min-width: $break-md){
+			border-color:$color_1;
+			&:hover{
+				border-color: $color_9;
+				color: $color_1 !important;
+				background: $color_9;
+			}
+		}
+	}
+	&--largeSize{
+		padding: 10px 25px !important;
+	}
+
+}
+
+.Button{
+	&--border{
+		border-width:2px;
+		border-style: solid;
+		border-radius:50px;
+	}
+	&.hover{
+		@media screen and (min-width: $break-sm){
+			&:hover{
+				background: $color_3 !important;
+				border-color: $color_3 !important;
+				color: $color_2 !important;
+			}
+		}
+	}
+	font-weight: bold;
+	line-height:31px;
+	min-height: 31px;
+}

@@ -1,0 +1,165 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+textarea,
+select{
+	padding: 0 10px;
+	min-height: $sizeColumns_px;
+	font-size: $font_size_text;
+	font-family: $fontFamily;
+	outline: none !important;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+	font-size: $font_size_text;
+	font-weight: bold;
+	font-family: $fontFamily;
+}
+
+$mainSelector: '.Form';
+#{$mainSelector}{
+	font-family: $fontFamily;
+	& #{$mainSelector}-label{
+		font-size:$font_size_text;
+		color: $color_6;
+	}
+	& ._form-thank-you { 
+		    position:relative; 
+		    left:0; 
+		    right:0; 
+		    text-align:center; 
+		    font-size:24px;
+		    font-weight: bold; 
+		}
+	& ._error{
+		color: red;
+		font-size: 14px;
+		margin-top: 5px;
+		font-weight: bold;
+	}
+	&--style1{
+		& #{$mainSelector}-label{
+			font-weight: bold;
+		}
+
+
+		& #{$mainSelector}-input{
+			height: $sizeColumns_px;
+			&[type="submit"]{
+				background: $color_5;
+				border: 1px solid $color_5;
+				color: $color_1;
+				&:hover{
+					background: $color_2;
+					border: 1px solid $color_2;
+				}
+			}
+		}
+		& #{$mainSelector}-input:not([type="submit"]){
+
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: $color_4;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: $color_4;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  color: $color_4;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  color: $color_4;
+			}
+			
+		}
+
+		& ._form-thank-you { 
+		    color: #25c844;
+		}
+		
+	}
+	&--style2{
+		& #{$mainSelector}-label{
+			font-weight: bold;
+		}
+
+		& #{$mainSelector}-input:not([type="submit"]){
+			height: $sizeColumns_px;
+			background-color: rgba(0,0,0,0.25);
+			border-radius: 25px;
+			overflow: hidden;
+			border: none;
+			color: rgba(255,255,255,0.75);
+			&:after{
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
+				background-color: $color_2;
+				z-index: -1;
+				content: "";
+				top: 0;
+				left: 0;
+			}
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: $color_1;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: $color_1;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  color: $color_1;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  color: $color_1;
+			}
+		}
+		& #{$mainSelector}-input[type="submit"]{
+			height: $sizeColumns_px;
+			background: none;
+			border-radius: 25px;
+			color: $color_1;
+			padding-left: 20px;
+			padding-right: 20px;
+			@media screen and (min-width: $break-md){
+				padding-left: 40px;
+				padding-right: 40px;
+				&:hover{
+					background: $color_3;
+					border-color: $color_3;
+					color: $color_2;
+				}
+			}
+		}
+	}
+	&--style3{
+		& #{$mainSelector}-label{
+			font-weight: bold;
+		}
+
+		& #{$mainSelector}-input{
+			height: $v_spacing;
+			min-height: $v_spacing;
+			border: 2px solid $color_1;
+			&[type="text"]{
+				background-color: $color_1;
+				color: $color_2;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			&[type="submit"]{
+				background-color: none;
+				color: $color_1;
+				&:hover{
+					background-color: $color_9;
+					border: 2px solid $color_9;
+				}
+			}
+		}
+		
+	}
+}
+
+// EMBED ORÇAMENTO
